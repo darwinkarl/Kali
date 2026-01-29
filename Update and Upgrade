@@ -1,0 +1,10 @@
+This Document is guide for Updating and Upgrading the Kali Linux Packages
+Reference: https://www.kali.org/docs/general-use/updating-a-package/
+
+*********************To update all packages on Kali Linux, you can run the following commands in the terminal*********************
+kali@kali:~$ sudo apt update                   # This command updates the packages list.
+kali@kali:~$ sudo apt full-upgrade             # Upgrades all installed packages to their latest versions.
+
+*********************Upgrading Specific Packages*********************
+kali@kali:~$ sudo apt install --only-upgrade package_name
+
